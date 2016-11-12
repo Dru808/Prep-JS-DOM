@@ -21,6 +21,10 @@ element.id sets or returns the identifier of an element
 element.innerHTML sets or returns the HTML element content of an element
 node.appendChild() is a method that appends a node as the last child of a node*/
 
+var catBox = document.createElement('div');
+catBox.id = 'meow';
+catBox.innerHTML = 'Overcome its fear of cucumbers!';
+bigBox.appendChild(catBox);
 
 //Exercise 2
 /*Declare a variable named catBox2 and create an element of your choice.  Give your element an id of "purr".  Next assign your element with the following text:
@@ -28,7 +32,10 @@ node.appendChild() is a method that appends a node as the last child of a node*/
 
 Append this newly created element to the bigBox element.*/
 
-
+var catBox2 = document.createElement('size');
+catBox2.id = 'purr';
+catBox2.innerHTML = 'Audition for the next musical.';
+bigBox.appendChild(catBox2);
 
 //Exercise 3
 /*Your objective is to display the following getBuckets array into the document. 
@@ -42,7 +49,13 @@ element.className is a property that sets or returns the class name of an elemen
 
 var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visit Aoshima (aka Japan's Cat Island)", "Exhaust my entire 9 lives", "Pass DevLeague's coding challenge", "Become the next internet sensation", "eat tacos", "Buy Vic a bottle of Hendricks Gin" ];
 
-
+for(i = 0; i < getBuckets.length; i++){
+	console.log(i);
+}
+var bucketList = document.createElement('li');
+bucketList.className = 'daList';
+bucketList.innerHTML = getBuckets[i]; // showing 'undefined' in the elements tab in browser????
+buckets.appendChild(bucketList);
 
 //Exerise 4
 /*Our motivated Tacocat has been hard at work on its bucket list.  Update the current list to the following:
