@@ -65,7 +65,8 @@ buckets.appendChild(bucketList);
 Declare a variable named changeList and assign it to the getElementsByTagName method.
 */
 
-
+var changeList = document.getElementsByTagName('li');
+changeList[0].innerHTML = "I'm coming for you Felix!";
 
 
 
@@ -74,6 +75,8 @@ Declare a variable named changeList and assign it to the getElementsByTagName me
 
 "Exhaust my entire 9 lives" => "I got 1 life to live!"*/
 
+var changeListAgain = document.getElementsByClassName("daList");
+changeListAgain[2].innerHTML = "I got 1 life to live!";
 
 };
 
