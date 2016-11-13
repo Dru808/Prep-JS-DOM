@@ -32,7 +32,7 @@ bigBox.appendChild(catBox);
 
 Append this newly created element to the bigBox element.*/
 
-var catBox2 = document.createElement('size');
+var catBox2 = document.createElement('p');
 catBox2.id = 'purr';
 catBox2.innerHTML = 'Audition for the next musical.';
 bigBox.appendChild(catBox2);
